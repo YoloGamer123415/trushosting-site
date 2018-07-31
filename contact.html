@@ -1,0 +1,145 @@
+<!-- Created/design by https://portofolio.Vysix.nl/ -->
+<!-- You are not allowed to use this code or resources -->
+<!-- If you want to use code or recources of this website contact the creator -->
+<!-- Contact info: Tymenvis@Outlook.com --> 
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link rel="shortcut icon" href="afbeeldingen/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="afbeeldingen/favicon.ico" type="image/x-icon">
+        <title>Products | TrusHosting</title>
+    </head>
+    <header>
+        <nav class="nav">
+            <img id="hamburger_icon" class="hamburger_icon" src="./afbeeldingen/Hamburger_icon.png" alt="Menu">
+            <div id="nav" class="nav hide">
+                <ul>
+                    <li><a href="index.html"><img src="afbeeldingen/home.png" width="20px"> Home</a></li>
+                    <li>
+                        <a href="producten.html"><img src="afbeeldingen/shopping-cart.png" width="20px"> Products</a>
+                        <ul>
+                            <li><a href="https://site.vysix.nl" class="ssdmc">Webhosting</a></li>
+                            <li><a href="teamspeak.html" class="ssdmc">Teamspeak 3</a></li>
+                            <li><a href="MCSSD.html" class="ssdmc">Minecraft SSD</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><img src="afbeeldingen/levels-controls.png" width="20px"> Server panel</a></li>
+                    <li><a href="index.html"><img src="afbeeldingen/users.png" width="20px"> Team</a></li>
+                    <li><a href="contact.html"><img src="afbeeldingen/mail.png" width="20px"> Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <body>
+        <div class="container">
+            <homepage>
+                <informatie>
+                    <div id="content-contact">
+                        <div class="WaaromTSContact">
+                            <h1>Contact</h1>
+                        </div>
+                        <div id="ReasonsGroupHome">
+                            <div class="ReasonsGroupHome">
+                                <main>
+                                    <div class="spacer-contact"></div>
+                                        <div class="form-style-6">
+                                        <form action="contact/sendToAPI.html">
+                                            <label for="naam">Voor- en achternaam:</label>
+                                            <br><input id="naam" type="text" placeholder="Jan van den Boom *" name="naam" required/><br />
+
+                                            <label for="dcnaam">Discord naam:</label>
+                                            <br><input id="dcnaam" type="text" placeholder="@Jan_van_den_Boom" name="dcnaam"/><br />
+
+                                            <label for="emailaddress">Email adres:</label>
+                                            <br><input id="emailaddress" type="text" placeholder="janvdboom@voorbeeld.nl *" name="emailaddress" required/><br />
+                                            
+                                            <label for="select">Onderwerp vraag:</label>
+                                            <br><select name="reason" id="select" required>
+                                                <option value="webhosting">Webhosting</option>
+                                                <option value="design">Design</option>
+                                                <option value="mchosting">Mc Hosting</option>
+                                                <option value="teamspeak">Teamspeak</option>
+                                                <option value="financieel">Financiele zaken</option>
+                                                <option value="overig">Overig</option>
+                                            </select>
+                                            <br><input id="onderwerp" type="text" class="hidden" name="overig" placeholder="Overig Onderwerp">
+
+                                            <br><label for="vraag">Uw vraag:</label>
+                                            <br><textarea id="vraag" type="text" name="vraag" required></textarea><br />
+
+                                            <input id="send" type="submit" value="Formulier verzenden"/>
+                                            <p>(Wanneer u op 'verstuur' drukt, kan het zijn dat het een tijdje moet laden, dit is volkomen normaal omdat wij uw formulier aan het verwerken zijn. Sluit alstublieft niet de browser af, want dan komt uw formulier niet aan)</p>
+                                        </form>
+                                        <p class="verplicht">* verplicht</p>
+                                    </div>
+                                </main>
+                            </div>
+                            <footer>
+                                <div id="footer-contact">
+                                    <div id="floatcenter">
+                                        <div id="footer-1">
+                                            <h1 class="footertitle">TrusHosting</h1><br>
+                                            <div id="left-footer">
+                                                <a href="example.html">&#187; Home</a><br>
+                                                <a href="example.html">&#187; voorbeelden</a><br>
+                                                <a href="example.html">&#187; WebDesign</a><br>
+                                                <a href="example.html">&#187; Webhosting</a><br>
+                                                <a href="example.html">&#187; Minecraft hosting</a><br>
+                                                <a href="example.html">&#187; Over</a><br>
+                                                <a href="example.html">&#187; Klanten paneel</a><br>
+                                                <a href="example.html">&#187; Support</a><br>
+                                                <a href="agv.html">&#187; Algemene voorwaarden</a><br>
+                                            </div>
+                                        </div>
+                                        <div id="footer-2">
+                                            <h1 class="footertitle">Social media</h1>
+                                            <div id="socialmediaiconss">
+                                            <a href="#" class="socialmediaicon"><img src="afbeeldingen/twitter-2.png" width="50px"></a>
+                                            <a href="https://discord.gg/wbag2cB" class="socialmediaicon"><img src="afbeeldingen/discord-512.png" width="50px"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="footer-3">
+                                        <hr>
+                                        <p>All rights reserved &copy;2018-2019 TrusHosting, Designed by <a href="https://vysix.nl/" vysix="">Vysix</a></p>
+                                    </div>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                </informatie>
+            </homepage>
+        </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>x=decodeURIComponent(window.location.search).substring(1).split('&');if(x[0].split('=')[1]!==undefined){if(x[0].split('=')[0]==='discordName'){if(x[0].split('=')[1].startsWith('@')){$('#dcnaam').val(x[0].split('=')[1]);}}}const a=document.getElementById('select'),b = $('#onderwerp');a.addEventListener('change',()=>{if(a.options[a.selectedIndex].value === 'overig'){b.removeClass('hidden');}else{b.val('');b.addClass('hidden');}});</script>
+    <script>
+        $(document).ready(function (){
+            $("a").on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 1000, function(){
+                        window.location.hash = hash;
+                    });
+                }
+            })
+        });
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/5b488dd04af8e57442dc9e6a/default';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
+    <script>var aa=$('#nav');var ba=$('#hamburger_icon');ba.click((e)=>{aa.toggleClass('hide')});</script>
+</html>

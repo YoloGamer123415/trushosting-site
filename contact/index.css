@@ -1,0 +1,11 @@
+main {
+    text-align: center;
+}
+
+p.verplicht {
+    color: #ff0000;
+}
+
+.hidden {
+    display: none;
+}

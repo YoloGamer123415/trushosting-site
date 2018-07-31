@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./index.css">
+    <title>APISetup</title>
+</head>
+<body>
+    <main>
+        <h1>Contact</h1>
+
+        <form action="./sendToAPI.html">
+            <label for="naam">Voor- en achternaam:</label>
+            <input id="naam" type="text" placeholder="Jan van den Boom" name="naam" required/> *<br />
+
+            <label for="dcnaam">Discord naam:</label>
+            <input id="dcnaam" type="text" placeholder="@Jan_van_den_Boom" name="dcnaam"/><br />
+
+            <label for="emailaddress">Email adres:</label>
+            <input id="emailaddress" type="text" placeholder="janvdboom@voorbeeld.nl" name="emailaddress" required/> *<br />
+            
+            <label for="select">Onderwerp vraag:</label>
+            <select name="reason" id="select" required>
+                <option value="webhosting">Webhosting</option>
+                <option value="design">Design</option>
+                <option value="mchosting">Mc Hosting</option>
+                <option value="teamspeak">Teamspeak</option>
+                <option value="financieel">Financiele zaken</option>
+                <option value="overig">Overig</option>
+            </select><input id="onderwerp" class="hidden" name="overig" placeholder="Onderwerp" /> *<br />
+
+            <label for="vraag">Uw vraag:</label>
+            <textarea id="vraag" type="text" name="vraag" required></textarea> *<br />
+
+            <button id="send" type="submit">verstuur</button>
+            <p>(Wanneer u op 'verstuur' drukt, kan het zijn dat het een tijdje moet laden, dit is volkomen normaal omdat wij uw formulier aan het verwerken zijn. Sluit alstublieft niet de browser af, want dan komt uw formulier niet aan)</p>
+        </form>
+        <p class="verplicht">* verplicht</p>
+    </main>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>x=decodeURIComponent(window.location.search).substring(1).split('&');if(x[0].split('=')[1]!==undefined){if(x[0].split('=')[0]==='discordName'){if(x[0].split('=')[1].startsWith('@')){$('#dcnaam').val(x[0].split('=')[1]);}}}const a=document.getElementById('select'),b = $('#onderwerp');a.addEventListener('change',()=>{if(a.options[a.selectedIndex].value === 'overig'){b.removeClass('hidden');}else{b.val('');b.addClass('hidden');}});</script>
+</body>
+</html>
